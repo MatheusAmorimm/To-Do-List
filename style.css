@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body{
+    background-image: url(./imagens/background.png);
+}
+
+img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#container{
+    background: #f7efe6;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+#txt{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+#add{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    background: #003329;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 10px;
+    float: right;
+    cursor: pointer;
+}
+
+/*Evento do mouse em cima do botao*/
+
+#add:hover{
+    opacity: 0.8;
+}
+
+/*Evento de clicar no botao*/
+
+#add:active{
+    opacity: 0.4;
+}
+
+#task-list{
+    width: 100%;
+    list-style: none;
+    margin: 30px 0;
+}
+
+.task{
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    height: 50px;
+    display: flex;
+    align-items: center; /*alinhando verticalmente*/
+    justify-content: space-between; /*alinhando horizontalmente*/
+    padding: 0 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.task:hover img{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.feito{
+    background-color: #e0ff70a1;
+    text-decoration: line-through;
+}
